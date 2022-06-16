@@ -1,10 +1,8 @@
 ﻿namespace FileManipulator
 {
-    partial class Program
+    public interface IFileNameModifier
     {
-        public interface IFileNameModifier
-        {
-            void ModifyFileNames(string stringModifier);
-        }
+        void ModifyFileNames(string stringModifier);
+        string ModifierType { get; }
     }
 }
