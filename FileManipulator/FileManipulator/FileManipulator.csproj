@@ -43,7 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileAppender.cs" />
+    <Compile Include="FilePrepender.cs" />
+    <Compile Include="FileService.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="IFileNameModifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
