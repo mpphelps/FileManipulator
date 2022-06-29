@@ -8,17 +8,23 @@ using Microsoft.Win32;
 
 namespace FileManipulator
 {
-    partial class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            var fileService = new FileService();
+            var pathRequester = new PathRequester();
+            var fileService = new FileService(pathRequester);
             fileService.RequestPath();
             var prepender = new FilePrepender(fileService.GetPath());
             var appender = new FileAppender(fileService.GetPath());
             fileService.ModifyFile(prepender);
             fileService.ModifyFile(appender);
         }
+    }
+
+    internal class mySecret
+    {
+
     }
 }
 
