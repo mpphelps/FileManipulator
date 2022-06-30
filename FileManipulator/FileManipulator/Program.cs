@@ -21,10 +21,5 @@ namespace FileManipulator
             fileService.ModifyFile(appender);
         }
     }
-
-    internal class mySecret
-    {
-
-    }
 }
 
