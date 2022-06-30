@@ -19,6 +19,7 @@ namespace FileManipulator
             var appender = new FileAppender(fileService.GetPath());
             fileService.ModifyFile(prepender);
             fileService.ModifyFile(appender);
+            Console.WriteLine("End of Program");
         }
     }
 }
